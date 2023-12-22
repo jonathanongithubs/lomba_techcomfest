@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BudayaQ</title>
+    <link rel="icon" href="assets/images/logo budayaq.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<style>
+    .center-form {
+        max-width: 600px;
+        /* Adjust the max-width as needed */
+        margin: auto;
+    }
+</style>
+
+<body>
+    <div class="container mt-5 center-form" data-aos="fade-down" data-aos-delay="50">
+        <h2 class="mb-4">Form Tambah Suku</h2>
+
+        <form enctype="multipart/form-data" method="post" action="../tambah_suku.php">
+            <!-- Nama Suku -->
+            <div class="mb-3">
+                <label for="namaSuku" class="form-label">Nama Suku</label>
+                <input type="text" class="form-control" id="namaSuku" name="nama_suku" required>
+            </div>
+
+            <!-- Gambar Suku -->
+            <div class="mb-3">
+                <label for="gambarSuku" class="form-label">Gambar Suku</label>
+                <input type="file" class="form-control" id="gambarSuku" name="gambar_suku" accept="image/*" required>
+            </div>
+
+            <!-- Deskripsi Suku -->
+            <div class="mb-3">
+                <label for="deskripsiSuku" class="form-label">Deskripsi Suku</label>
+                <textarea class="form-control" id="deskripsiSuku" name="deskripsi_suku" rows="3" required></textarea>
+            </div>
+
+            <!-- Asal Suku -->
+            <div class="mb-3">
+                <label for="asalSuku" class="form-label">Asal Suku</label>
+                <input type="text" class="form-control" id="asalSuku" name="asal_suku" required>
+            </div>
+
+            <!-- Jumlah Penduduk -->
+            <div class="mb-3">
+                <label for="jumlahPenduduk" class="form-label">Jumlah Penduduk</label>
+                <input type="number" class="form-control" id="jumlahPenduduk" name="jumlah_penduduk" required>
+            </div>
+
+            <!-- Nama Makanan Adat -->
+            <div class="mb-3">
+                <label for="namaMakananAdat" class="form-label">Nama Makanan Adat</label>
+                <input type="text" class="form-control" id="namaMakananAdat" name="makanan_adat" required>
+            </div>
+
+            <!-- Gambar Makanan Adat -->
+            <div class="mb-3">
+                <label for="gambarMakananAdat" class="form-label">Gambar Makanan Adat</label>
+                <input type="file" class="form-control" id="gambarMakananAdat" name="gambar_makanan_adat" accept="image/*" required>
+            </div>
+
+            <!-- Nama Pakaian Adat -->
+            <div class="mb-3">
+                <label for="namaPakaianAdat" class="form-label">Nama Pakaian Adat</label>
+                <input type="text" class="form-control" id="namaPakaianAdat" name="pakaian_adat" required>
+            </div>
+
+            <!-- Gambar Pakaian Adat -->
+            <div class="mb-3">
+                <label for="gambarPakaianAdat" class="form-label">Gambar Pakaian Adat</label>
+                <input type="file" class="form-control" id="gambarPakaianAdat" name="gambar_pakaian_adat" accept="image/*" required>
+            </div>
+
+            <!-- Tempat Wisata -->
+<div class="mb-3">
+    <label for="tempatWisata" class="form-label">Tempat Wisata</label>
+    <input type="file" class="form-control" id="tempatWisata" name="tempat_wisata" required>
+</div>
+
+<!-- Rumah Adat -->
+<div class="mb-3">
+    <label for="rumahAdat" class="form-label">Rumah Adat</label>
+    <input type="file" class="form-control" id="rumahAdat" name="rumah_adat" required>
+</div>
+
+<!-- Gambar Lain -->
+<div class="mb-3">
+    <label for="gambarLain" class="form-label">Gambar Lain</label>
+    <input type="file" class="form-control" id="gambarLain" name="gambar_lain" accept="image/*" required>
+</div>
+
+            <!-- Tombol Submit -->
+            
+            <button type="submit" class="btn btn-primary rounded">
+                Submit
+              </button>
+            <a type="button" class="btn btn-danger rounded" href="jelajah.php">Kembali</a>
+        </form>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

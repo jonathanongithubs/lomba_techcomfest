@@ -1,0 +1,107 @@
+/* CSS untuk menengahkan teks pada carousel */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+/* Menjadikan gambar di dalam carousel responsif */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Tambahkan lapisan overlay dengan opacity pada carousel item */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire width */
+  height: 100% auto; /* Cover the entire height */
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust opacity or color as needed */
+  z-index: 1;
+}
+
+/* Atur teks agar terlihat di atas lapisan overlay pada carousel */
+.carousel-caption p {
+  margin-bottom: 15px;
+}
+
+/* Gaya tombol pada carousel */
+.btn-dark {
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+}
+
+/* Tambahkan ruang antar card */
+.card {
+  margin-bottom: 20px;
+  border-radius: 20px; /* Add border-radius for rounded cards */
+  overflow: hidden; /* Hide overflow to make the border-radius work */
+  width: 80%; /* Set the width to 100% for full-width cards */
+  margin: 100px auto;
+}
+
+.card-img-top {
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+/* CSS untuk latar belakang gambar pada body */
+body {
+  background-image: url("../images/BG\ MENU\ DISCOVER.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* CSS untuk mengatur tampilan konten di dalam container */
+.container {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Media query untuk responsivitas */
+@media (max-width: 768px) {
+  /* Tambahkan gaya CSS khusus untuk layar berukuran kecil */
+
+  /* Menengahkan teks pada carousel untuk layar kecil */
+  .carousel-caption {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 300px; /* Set a max-width if necessary */
+    display: block !important;
+  }
+
+  .carousel-caption p {
+    margin-bottom: 15px;
+  }
+
+  .btn-dark {
+    display: block;
+    margin: 15px auto; /* Adjust margin as needed */
+  }
+}
+
+/* Mengatur tinggi lapisan overlay pada carousel item untuk layar kecil */
+.carousel-item::before {
+  height: 80%;
+}
+
+/* Mengatur ruang antar card untuk layar kecil */
+.card {
+  margin-bottom: 10px;
+}
